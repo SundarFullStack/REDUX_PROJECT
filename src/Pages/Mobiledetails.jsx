@@ -46,7 +46,7 @@ export default function Mobiledetails(){
 
   useEffect(()=>{
    
-    fetch("http://localhost:3000/mocks/products.json").then((reponse)=>reponse.json()).then((result)=>{
+    fetch(`/mocks/products.json`).then((reponse)=>reponse.json()).then((result)=>{
     if(result && result.data){
       setPhones(result.data)
     }}).catch((error) => console.log(error))
