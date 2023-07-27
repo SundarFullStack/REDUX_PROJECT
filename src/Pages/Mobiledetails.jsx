@@ -43,13 +43,16 @@ export default function Mobiledetails(){
   
 
   // FETCHING PRODUCTS.JSON DATA FROM MOCKS USING FETCH AND useEffect HOOK  
+  //THE DATA IS CONFIGURED IN ANOTHER NODEJS PROJECT AND DEPLOYED IN RENDER WEBSITE
 
   useEffect(()=>{
    
-    fetch(`/mocks/products.json`).then((reponse)=>reponse.json()).then((result)=>{
-    if(result && result.data){
-      setPhones(result.data)
-    }}).catch((error) => console.log(error))
+    fetch("https://user-data-9q7h.onrender.com/data").then((reponse)=>reponse.json()).then((result)=>{
+      console.log(result);
+     if(result){
+      setPhones(result)
+     }
+  }).catch((error) => console.log(error))
 
 
    return ()=> {};
