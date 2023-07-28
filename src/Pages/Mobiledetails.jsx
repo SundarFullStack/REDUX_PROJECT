@@ -48,7 +48,7 @@ export default function Mobiledetails(){
   useEffect(()=>{
    
     fetch("https://user-data-9q7h.onrender.com/data").then((reponse)=>reponse.json()).then((result)=>{
-      console.log(result);
+      // console.log(result);
      if(result){
       setPhones(result)
      }
