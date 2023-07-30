@@ -36,12 +36,12 @@ li a:hover {
   margin-top:1px
 }
 
-#addCart{
+#placeOrder{
 
   background-color: #164d8fe3;
   color:white;
 }
-#removeCart{
+#cancelOrder{
   
   background-color: #02060ce3;
     color: white;
